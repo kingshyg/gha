@@ -20,4 +20,4 @@ jobs:
           who-to-greet: "@boss-man"
       
       - name: output time
-        run: echo "The time is ${{ steps.hello-action.outputs.time}}"
+        run: echo "The time is ${{ steps.hello-action.outputs.time }}"
