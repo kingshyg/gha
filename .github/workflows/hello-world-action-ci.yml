@@ -17,7 +17,7 @@ jobs:
         id: hello-action
         uses: ./hello-world-action
         with:
-          who-to-greet: "@boss-man"
+          who-to-greet: '@bossman'
       
       - name: output time
         run: echo "The time is ${{ steps.hello-action.outputs.time }}"
