@@ -1,0 +1,20 @@
+name: hello world example
+author: moi
+
+# define inputs
+inputs:
+  who-to-greet:
+  required: true
+  default: mondo
+
+# outputs
+outputs:
+  time:
+  description: time of the greeting
+
+# action
+runs:
+  using: docker
+  image: Dockerfile
+  env:
+    INPUT_WHO_TO_GREET: ${{ inputs.who-to-greet}}
