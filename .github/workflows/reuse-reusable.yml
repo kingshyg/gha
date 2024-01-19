@@ -4,7 +4,7 @@ on: [workflow_dispatch]
 
 jobs:
   call-workflow:
-    uses: ./.github/workflows/reusable.yml
+    uses: ./.github/workflows/reuable.yml
     with:
       who-to-greet: 'your majesty'
 
